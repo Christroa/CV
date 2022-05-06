@@ -74,3 +74,62 @@ div.main > .sections > div > p{
     font-size: 1rem;
     font-weight: bolder;
 }
+
+@media (max-width:500px) {
+    body {
+        background: var(--bg-color) ;
+        margin: 15px 30px;
+    }
+    div.app {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto 1fr;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    div.header, div.footer {
+        background: #126d3e;
+        border-radius: 30px;
+        padding: 15px 0;
+        text-align: center;
+    }
+    div.header {
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 25px;
+    }
+    div.footer {
+        font-size: .5rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        align-self:flex-end;
+    }
+    div.footer:hover {
+        background: #0a6e3a;
+    }
+    div.footer h1  {
+        color: #fff;
+        font-weight: 600;
+    }
+    
+    div.main > .sections{
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    div.main > .sections > div{
+        background: var(--bg2);
+        padding: 50px 30px;
+        border-radius: 35px;
+        text-transform: capitalize;
+        width: 100%;
+    }
+    
+    div.main > .sections > div > p{
+        margin-bottom: 15px;
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+    
+}
